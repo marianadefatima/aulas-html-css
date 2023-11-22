@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.video{
+    width: 250px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+.video img {
+    width: 250px;
+}
+
+.video .texto img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

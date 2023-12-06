@@ -1,27 +1,108 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 header {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
-  }
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+#txtBusca {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 30px;
+    padding: 12px;
+    flex-grow: 1;
+    padding-left: 20px;
 }
 
-.video{
-    width: 250px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    padding: 20px;
+.video {
+    flex-basis: calc(33.333% - 12px);
+    border: 1px solid #ccc;
+    padding: 10px;
 }
+
 .video img {
-    width: 250px;
+    width: 350px;
+    height: 350px;;
+    object-fit: cover;
 }
 
-.video .texto img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+.avatar {
+   width: 50px; /* ou outra dimensão fixa */
+    height: 50px; /* mesma dimensão que a largura para manter um círculo perfeito */
+    object-fit: cover;
+    border-radius: 50%; /* Para torná-lo circular */
 }
+
+.title {
+    font-size: 1em;
+    margin: 0;
+}
+
+.description {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video {
+        flex-basis: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 480px) {
+    .video {
+        .video img {
+            height: 120px; /* ajuste conforme necessário */
+        }
+        flex-basis: 100%;
+        .logo img {
+            height: 30px;}
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

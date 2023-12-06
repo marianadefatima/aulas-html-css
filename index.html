@@ -4,87 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- escrevi link -->
     <title>YouTube</title>
 </head>
 <body>
+    <aside class="sidebar">
+        <!--Pesquisar sobre aside-->
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Em alta</a></li>
+                <li><a href="#">Inscrições</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Histórico</a></li>
+                <!-- Mais itens de menu podem ser adicionados aqui -->
+            </ul>
+        </nav>
+    </aside>
+    
     <header>
-        <div class="logo"></div>
-        <img src="https://www.gstatic.com/youtube/img/promos/growth/324acdc1105d45adf82f0aa7790e2028812575d5541f692e53800a1cc2167da5_244x112.webp" alt="">
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo do YouTube">
+        </div>
+        <input type="search" id="txtBusca" placeholder="Buscar..." aria-label="Buscar no site">
     </header>
+
     <main>
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
+        <article class="video">
+            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="Thumbnail do vídeo">
             <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
+                <img src="https://example.com/avatar.jpg" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">Aula de lógica de programação</h2>
+                    <p class="description">100 visualizações - 5 dias atrás</p>
+                </div>
             </div>
-        </div>
+        </article>
+        <!-- Repita o bloco acima para outros vídeos -->
+        <!-- Exemplo de um vídeo -->
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumbnail do vídeo">
+            <div class="texto">
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">Aula de lógica de programação</h2>
+                    <p class="description">100 visualizações - 10 dias atrás</p>
+                </div>
+            </div>
+        </article>
 
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGluZmx1JUMzJUFBbmNpYSUyMGRhJTIwdGVjbm9sb2dpYSUyMG5hJTIwc29jaWVkZGFkZSUyMGF0dWFsfGVufDB8fDB8fHww" alt="Thumbnail do vídeo">
             <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">A influência da tecnologia na socieddade atual</h2>
+                    <p class="description">1.000 visualizações - 10 dias atrás</p>
+                </div>
             </div>
-        </div>
+        </article>
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZmx1JUMzJUFBbmNpYSUyMGRhJTIwdGVjbm9sb2dpYSUyMG5hJTIwc29jaWVkZGFkZSUyMGF0dWFsfGVufDB8fDB8fHww" alt="Thumbnail do vídeo">
+            <div class="texto">
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">A influência da tecnologia na socieddade atual</h2>
+                    <p class="description">1.000 visualizações - 10 dias atrás</p>
+                </div>
+            </div>
+        </article>
 
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZmx1JUMzJUFBbmNpYSUyMGRhJTIwdGVjbm9sb2dpYSUyMG5hJTIwc29jaWVkZGFkZSUyMGF0dWFsfGVufDB8fDB8fHww" alt="Thumbnail do vídeo">
             <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">O que esperar do futuro com o avanço da inteligência artificial</h2>
+                    <p class="description">1.000 visualizações - 10 dias atrás</p>
+                </div>
             </div>
-        </div>
+        </article>
 
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1462926703708-44ab9e271d97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tbyUyMHRlciUyMG1haXMlMjBxdWFsaWRhZGUlMjBkZSUyMHZpZGF8ZW58MHx8MHx8fDA%3D" alt="Thumbnail do vídeo">
             <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">Quais os melhores lugares do mundo para passar as férias?</h2>
+                    <p class="description">50K visualizações - 02 dias atrás</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
+        </article>
+        <article class="video">
+            <img src="https://plus.unsplash.com/premium_photo-1661661583168-659045108488?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVjZWl0YXxlbnwwfHwwfHx8MA%3D%3D" alt="Thumbnail do vídeo">
             <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">Saiba como organizar suas finanças em 10 passos</h2>
+                    <p class="description">50K visualizações - 20 dias atrás</p>
+                </div>
             </div>
-        </div>
+        </article>
+        <article class="video">
+            <img src="https://images.unsplash.com/photo-1616852299817-428494ce655f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fHw%3D" alt="Thumbnail do vídeo">
+            <div class="texto">
+                <img src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvc3RvJTIwZGUlMjB1bSUyMGRlc2Vudm9sdmVkb3J8ZW58MHx8MHx8fDA%3D" alt="Avatar do usuário" class="avatar">
+                <div>
+                    <h2 class="title">Como ter um hábito de leitura diária?</h2>
+                    <p class="description">50K visualizações - 02 dias atrás</p>
+                </div>
+            </div>
+        </article>
 
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-            <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
-            </div>
-        </div>
+        <!-- Adicione mais artigos de vídeo aqui -->
 
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-            <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
-            </div>
-        </div>
-
-        <div class="video">
-            <img src="https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-            <div class="texto">
-                <img src= "https://d1i4tvf70h7zdy.cloudfront.net/ead/cursos/5c782f2ad62ee.png" alt="">
-                <div class="title">Aula de lógica de programação</div>
-                <div class="description">100 visualizações - 5 dias</div>
-            </div>
-        </div>
     </main>
 </body>
 </html>
